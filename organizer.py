@@ -1,10 +1,15 @@
 from pathlib import Path 
 import shutil
-Category_Map = {
-    "Images" : [".jpeg",".jpg",".gif",".png"],
-    "Documents" : [".pdf",".docx",".txt",".xlsx",".csv",".pptx"],
-    "Audio" : [".mp3",".wav"],
-    "Archives" : [".zip",".tar",".gz"]
+CATEGORY_MAP = {
+    "Images": [".jpeg", ".jpg", ".png", ".gif", ".svg", ".bmp", ".webp"],
+    "Documents": [".pdf", ".txt", ".rtf", ".md"],
+    "Spreadsheets": [".csv", ".xls", ".xlsx"],
+    "Presentations": [".ppt", ".pptx", ".key"],
+    "Audio": [".mp3", ".wav", ".aac", ".flac"],
+    "Video": [".mp4", ".mkv", ".mov", ".avi", ".wmv"],
+    "Archives": [".zip", ".tar", ".gz", ".rar", ".7z"],
+    "Code": [".py", ".js", ".html", ".css", ".java", ".c", ".cpp"],
+    "Executables": [".exe", ".dmg", ".sh", ".bat"]
 }
 
 def organize_folder(target_directory):
